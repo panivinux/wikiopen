@@ -47,6 +47,31 @@ username=mgallardo
 password=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 domain=dmq.quitodm.inst
 
- 
+
+# COMPRIMIR ARCHIVOS
+ Compresion  del 172.30.1.142
+
+gzip -c /var/lib/docker/containers/9a62bc47dd5c8652d69df51439ec6e5876cefb3fb8c4f530aea75bfa1fa814e2/9a62bc47dd5c8652d69df51439ec6e5876cefb3fb8c4f530aea75bfa1fa814e2-json.log \
+> /var/RespaldoLogs/log_contenedores/mdmq_vehiculos_api-mdmq_vehiculos_api-1_2026-09-16.log.gz
+
+gzip -c /var/lib/docker/containers/c4e4683e14816467da7ae64c1e7c076e7e45cd6a106b9f49dbbb2d9bf7a0005c/c4e4683e14816467da7ae64c1e7c076e7e45cd6a106b9f49dbbb2d9bf7a0005c-json.log \
+> /var/RespaldoLogs/log_contenedores/nginx_2026-09-16.log.gz
+
+gzip -c /var/lib/docker/containers/2b40ab996b5327520d88d671903d249c55335cd159e5b4550a3ebc8847495b74/2b40ab996b5327520d88d671903d249c55335cd159e5b4550a3ebc8847495b74-json.log \
+> /var/RespaldoLogs/log_contenedores/mdmq_bienes_inmuebles-backend-1_2026-09-16.log.gz
+
+Verificacion 
+
+gzip -t /opt/RespaldoLogs/log_contenedores/nginx_2026-09-16.log.gz
+gzip -t
+gzip -t
+
+
+Truncado
+
+
+truncate -s 0 /var/lib/docker/containers/9a62bc47dd5c8652d69df51439ec6e5876cefb3fb8c4f530aea75bfa1fa814e2/9a62bc47dd5c8652d69df51439ec6e5876cefb3fb8c4f530aea75bfa1fa814e2-json.log
+truncate -s 0 /var/lib/docker/containers/c4e4683e14816467da7ae64c1e7c076e7e45cd6a106b9f49dbbb2d9bf7a0005c/c4e4683e14816467da7ae64c1e7c076e7e45cd6a106b9f49dbbb2d9bf7a0005c-json.log
+truncate -s 0 /var/lib/docker/containers/2b40ab996b5327520d88d671903d249c55335cd159e5b4550a3ebc8847495b74/2b40ab996b5327520d88d671903d249c55335cd159e5b4550a3ebc8847495b74-json.log
  
 
