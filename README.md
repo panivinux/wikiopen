@@ -40,9 +40,11 @@ ps –aux | grep ds_agent
 
 sudo mount -t cifs "\\filedmq02\Respaldos Logs\LINUX\2026\172.30.1.59\2026" /mnt/pruebalogs -o credentials=/etc/smbcredentialsmg,vers=3.0
 
-root@srv11contenedores03:/mnt/pruebalogs/LINUX/2026/172.30.1.59/2026# cat /etc/smbcredentialsmg 
+root@srv11contenedores03:/mnt/pruebalogs/LINUX/2026/172.30.1.59/2026# 
+
+cat /etc/smbcredentialsmg 
 username=mgallardo
-password=Argon171425$#
+password=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 domain=dmq.quitodm.inst
 
  
