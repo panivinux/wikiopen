@@ -38,7 +38,8 @@ ps –aux | grep ds_agent
 
 # AGREGAR UNA CARPETA DE FILESERVER
 
-sudo mount -t cifs "\\filedmq02\Respaldos Logs\LINUX\2026\172.30.1.59\2026" /mnt/pruebalogs -o credentials=/etc/smbcredentialsmg,vers=3.0
+[root@apimanager mnt]# mount -t cifs "\filedmq02.isilon-dmi.dmq.quitodm.inst\Respaldos Logs\LINUX\2026\172.30.1.142\
+2026" /mnt/logs -o credentials=/etc/smbcredentialsmg,vers=3.0
 
 root@srv11contenedores03:/mnt/pruebalogs/LINUX/2026/172.30.1.59/2026# 
 
